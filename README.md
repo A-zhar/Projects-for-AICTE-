@@ -1,5 +1,5 @@
-# Projects-for-AICTE-
-secure data hiding in images using steganography
+Secure Data Hiding in Images using Steganography
+
 Overview
 This project implements an image-based steganography technique to securely hide and retrieve messages within digital images. It provides an additional layer of security by combining encryption with steganographic techniques, ensuring secure communication without altering the perceptual quality of the cover image.
 
