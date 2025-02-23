@@ -1,89 +1,88 @@
 # Secure Data Hiding in Images using Steganography
 
-## Overview
-This project implements an image-based steganography technique to securely hide and retrieve messages within digital images. It provides an additional layer of security by combining encryption with steganographic techniques, ensuring secure communication without altering the perceptual quality of the cover image.
+Secure Data Hiding in Images using Steganography
+Project Overview
+This project implements image-based steganography that allows users to securely hide and retrieve secret messages inside an image using a password. The image processing is handled with OpenCV, and the script is written in Python.
 
-## Features
-- **Image Steganography**: Hide text messages within image pixels without noticeable distortion.
-- **Encryption & Decryption**: Ensures secure transmission by encoding messages with a passcode.
-- **Lossless Data Embedding**: Maintains image quality while storing hidden messages.
-- **Cross-Platform Compatibility**: Runs on any system supporting Java and OpenCV.
-- **User-Friendly Interface**: Command-line interaction for easy encryption and decryption.
+Features
+Encrypt a Secret Message: Hide a message inside an image without changing its appearance. Protect the message with a password.
 
-## Technologies Used
-- **Python** - Simplicity.
-- **OpenCV** – Image processing library.
-- **BufferedImage API** – For image manipulation in Java.
-- **GitHub** – Version control and collaboration.
+Decrypt the Message: Extract the hidden message from the image. Requires the correct password for successful decryption.
 
-## Installation
-To set up and run this project locally, follow these steps:
+Simple Command-Line Interface: Easy-to-use command-line interface for encryption and decryption.
 
-1. Prepare the Environment
-Install Python: Make sure you have Python installed on your system. You can download it from python.org.
+Project Structure
+encrypt_image.py: Script for encrypting messages in an image.
 
-Install Required Libraries: Install the OpenCV library, which is used for image processing. You can do this by running the following command in your Command Prompt or terminal:
+decrypt_image.py: Script for decrypting messages from an image.
+
+README.md: Project documentation.
+
+Installation & Setup
+Install Dependencies: Make sure you have Python 3.6+ installed. Then, install the required libraries:
 
 bash
 pip install opencv-python
-2. Save the Script
-Create a Python Script: Open a text editor or an Integrated Development Environment (IDE) like VSCode, PyCharm, or even Notepad.
-
-Copy the Script: Copy the entire script you provided into the editor and save it with a .py extension. For example, save it as steganography.py.
-
-3. Prepare the Image
-Image File: Place the image file you want to use for hiding the message (e.g., steno.jpg) in the same directory as your script.
-
-4. Run the Script
-Open Command Prompt: Open the Command Prompt and navigate to the directory where your script and image are located.
-
-Execute the Script: Run the script by typing the following command and pressing Enter:
+Run the Encryption Script: To encrypt a message into an image:
 
 bash
-python steganography.py
-5. Follow the Prompts
-Input Secret Message and Passcode: When prompted, enter the secret message you want to hide and a passcode for encryption.
+python encrypt_image.py
+Select an image.
 
-Check the Encrypted Image: The script will save and open the encrypted image (encryptedImage.jpg).
+Enter a secret message.
 
-6. Decrypt the Message
-Run the Script Again: To decrypt the message, run the script again.
+Enter a password.
 
-Input the Passcode for Decryption: When prompted for the decryption passcode, enter the same passcode you used during encryption.
+Save the encrypted image.
 
-Retrieve the Hidden Message: If the passcode is correct, the hidden message will be printed.
+Run the Decryption Script: To decrypt a message from an image:
 
-Example Commands
 bash
-pip install opencv-python
-cd 
+python decrypt_image.py
+Select the encrypted image.
 
+Enter the correct password.
 
-## Usage
-1. **Encrypt a Message:**
-   - The program takes an image (`steng.jpg`) and hides the entered message within its pixel data.
-   - The Python code for Image Encyption generates an encrypted image (`encryptedsteng.jpg`) containing the hidden message.
-2. **Decrypt a Message:**
-   - The program reads `encryptedsteng.jpg`, extracts the hidden message, and verifies the passcode.
-   - If the passcode matches, it displays the decrypted message.
+Retrieve the hidden message.
 
-## Example Execution
-```
-Enter secret message: Hello, this is a secret!
-Enter a passcode: mypass123
-Encryption Completed. Encrypted image saved as encryptedImage.png
-```
+Usage
+Encrypting a Message:
 
-```
-Enter passcode for Decryption: mypass123
-Decrypted message: Hello, this is a secret!
-```
+Select an image file.
 
-## Future Enhancements
-- **Graphical User Interface (GUI)** for easier interaction.
-- **Support for Multiple File Formats** (JPEG, BMP, etc.).
-- **AES/RSA Encryption** for enhanced security before embedding data.
-- **Video Steganography** to hide messages in video frames.
+Enter your secret message.
+
+Enter a password for protection.
+
+Click Encrypt → Save the encrypted image.
+
+Decrypting a Message:
+
+Select the encrypted image file.
+
+Enter the correct password.
+
+Click Decrypt → The message is displayed.
+
+Security Considerations
+The message is hidden at the pixel level but is not strongly encrypted. For added security, use additional cryptographic encryption (e.g., AES) before encoding.
+
+If the password is incorrect, decryption will fail.
+
+Future Enhancements
+Support for multiple image formats (JPEG, PNG, etc.).
+
+Stronger encryption methods for added security.
+
+Mobile app version using Python-Kivy or Flutter.
+
+Credits
+Developed using:
+
+Python 🐍
+
+OpenCV 📷
+
 
 ## Contributors
 - **Khaja Azharuddin
@@ -94,5 +93,5 @@ Special thanks to **Channabasava Yadav and Vignesh M from Edunet** for their gui
 
 ## Contact
 For any queries or suggestions, contact:
-- **GitHub**:
+- **GitHub**:https://github.com/A-zhar/steganography-cybersecuirty-project
 - **Email**: khajaazharuddin312@gmail.com
