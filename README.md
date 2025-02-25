@@ -1,5 +1,4 @@
-# Image-Based Steganography
-
+# Secure the data hiding in images using steganography 
 Securely hide and retrieve secret messages inside an image using a password.
 
 ## 📌 Features
