@@ -81,15 +81,6 @@ Developed using:
 - **Python** 🐍
 - **OpenCV** 📷
 
-Give this project a ⭐ if you find it useful!
-
----
-
-## 📜 License
-This project is open-source and available under the **MIT License**.
-
-
-
 
 ## Contributors
 - **Khaja Azharuddin
