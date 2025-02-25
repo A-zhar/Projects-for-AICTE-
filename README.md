@@ -1,87 +1,94 @@
-# Secure Data Hiding in Images using Steganography
+# Image-Based Steganography
 
-Secure Data Hiding in Images using Steganography
-Project Overview
-This project implements image-based steganography that allows users to securely hide and retrieve secret messages inside an image using a password. The image processing is handled with OpenCV, and the script is written in Python.
+Securely hide and retrieve secret messages inside an image using a password.
 
-Features
-Encrypt a Secret Message: Hide a message inside an image without changing its appearance. Protect the message with a password.
+## 📌 Features
+- **Encrypt a Secret Message:** Hide a message inside an image without altering its appearance, protected by a password.
+- **Decrypt the Message:** Extract the hidden message from the image using the correct password.
+- **Simple Command-Line Interface:** Easy-to-use scripts for encryption and decryption.
 
-Decrypt the Message: Extract the hidden message from the image. Requires the correct password for successful decryption.
+---
 
-Simple Command-Line Interface: Easy-to-use command-line interface for encryption and decryption.
+## 📂 Project Structure
+```
+📁 Image-Steganography
+│── encrypt_image.py      # Script for encrypting messages in an image
+│── decrypt_image.py      # Script for decrypting messages from an image
+│── README.md             # Project documentation
+```
 
-Project Structure
-encrypt_image.py: Script for encrypting messages in an image.
+---
 
-decrypt_image.py: Script for decrypting messages from an image.
+## 🛠 Installation & Setup
 
-README.md: Project documentation.
-
-Installation & Setup
-Install Dependencies: Make sure you have Python 3.6+ installed. Then, install the required libraries:
-
-bash
+### 1️⃣ Install Dependencies
+Ensure you have Python 3.6+ installed, then install the required libraries:
+```bash
 pip install opencv-python
-Run the Encryption Script: To encrypt a message into an image:
+```
 
-bash
+### 2️⃣ Run the Encryption Script
+To encrypt a message into an image:
+```bash
 python encrypt_image.py
-Select an image.
+```
+- Select an image.
+- Enter a secret message.
+- Enter a password.
+- Save the encrypted image.
 
-Enter a secret message.
-
-Enter a password.
-
-Save the encrypted image.
-
-Run the Decryption Script: To decrypt a message from an image:
-
-bash
+### 3️⃣ Run the Decryption Script
+To decrypt a message from an image:
+```bash
 python decrypt_image.py
-Select the encrypted image.
+```
+- Select the encrypted image.
+- Enter the correct password.
+- Retrieve the hidden message.
 
-Enter the correct password.
+---
 
-Retrieve the hidden message.
+## 🎯 Usage
 
-Usage
-Encrypting a Message:
+### 🔒 Encrypting a Message
+1. Select an image file.
+2. Enter your secret message.
+3. Enter a password for protection.
+4. Click **Encrypt** → Save the encrypted image.
 
-Select an image file.
+### 🔓 Decrypting a Message
+1. Select the encrypted image file.
+2. Enter the correct password.
+3. Click **Decrypt** → The message is displayed.
 
-Enter your secret message.
+---
 
-Enter a password for protection.
+## 🔐 Security Considerations
+- The message is hidden at the pixel level but is **not strongly encrypted**. For added security, use additional cryptographic encryption (e.g., AES) before encoding.
+- If the password is incorrect, decryption will fail.
 
-Click Encrypt → Save the encrypted image.
+---
 
-Decrypting a Message:
+## 🚀 Future Enhancements
+- ✅ Support for multiple image formats (JPEG, PNG, etc.).
+- ✅ Stronger encryption methods for added security.
+- ✅ Mobile app version using Python-Kivy or Flutter.
 
-Select the encrypted image file.
+---
 
-Enter the correct password.
-
-Click Decrypt → The message is displayed.
-
-Security Considerations
-The message is hidden at the pixel level but is not strongly encrypted. For added security, use additional cryptographic encryption (e.g., AES) before encoding.
-
-If the password is incorrect, decryption will fail.
-
-Future Enhancements
-Support for multiple image formats (JPEG, PNG, etc.).
-
-Stronger encryption methods for added security.
-
-Mobile app version using Python-Kivy or Flutter.
-
-Credits
+## 🎨 Credits
 Developed using:
+- **Python** 🐍
+- **OpenCV** 📷
 
-Python 🐍
+Give this project a ⭐ if you find it useful!
 
-OpenCV 📷
+---
+
+## 📜 License
+This project is open-source and available under the **MIT License**.
+
+
 
 
 ## Contributors
